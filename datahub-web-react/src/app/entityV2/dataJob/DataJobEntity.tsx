@@ -21,6 +21,8 @@ import { EntityProfile } from '../shared/containers/profile/EntityProfile';
 import { SidebarAboutSection } from '../shared/containers/profile/sidebar/AboutSection/SidebarAboutSection';
 import DataProductSection from '../shared/containers/profile/sidebar/DataProduct/DataProductSection';
 import { SidebarDomainSection } from '../shared/containers/profile/sidebar/Domain/SidebarDomainSection';
+import { SidebarAccessRequestSection } from '/src/app/entity/shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection';
+// src/app/entity/shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection.tsx
 import SidebarLineageSection from '../shared/containers/profile/sidebar/Lineage/SidebarLineageSection';
 import { SidebarOwnerSection } from '../shared/containers/profile/sidebar/Ownership/sidebar/SidebarOwnerSection';
 import SidebarQueryOperationsSection from '../shared/containers/profile/sidebar/Query/SidebarQueryOperationsSection';
@@ -165,6 +167,7 @@ export class DataJobEntity implements Entity<DataJob> {
         { component: SidebarDataJobTransformationLogicSection },
         { component: SidebarOwnerSection },
         { component: SidebarDomainSection },
+        { component: SidebarAccessRequestSection },
         { component: DataProductSection },
         { component: SidebarGlossaryTermsSection },
         { component: SidebarTagsSection },

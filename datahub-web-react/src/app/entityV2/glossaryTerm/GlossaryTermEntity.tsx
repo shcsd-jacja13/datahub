@@ -101,7 +101,7 @@ export class GlossaryTermEntity implements Entity<GlossaryTerm> {
                 isNameEditable
                 tabs={[
                     {
-                        name: 'Documentation',
+                        name: 'Overview',
                         component: DocumentationTab,
                         icon: FileOutlined,
                     },

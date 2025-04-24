@@ -93,7 +93,7 @@ class GlossaryNodeEntity implements Entity<GlossaryNode> {
                         icon: AppstoreOutlined,
                     },
                     {
-                        name: 'Documentation',
+                        name: 'Overview',
                         component: DocumentationTab,
                         icon: FileOutlined,
                         properties: {

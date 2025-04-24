@@ -31,6 +31,8 @@ import { SidebarAboutSection } from '../shared/containers/profile/sidebar/AboutS
 import DataProductSection from '../shared/containers/profile/sidebar/DataProduct/DataProductSection';
 import SidebarDatasetHeaderSection from '../shared/containers/profile/sidebar/Dataset/Header/SidebarDatasetHeaderSection';
 import { SidebarDomainSection } from '../shared/containers/profile/sidebar/Domain/SidebarDomainSection';
+import { SidebarAccessRequestSection } from '/src/app/entity/shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection';
+// src/app/entity/shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection.tsx
 import SidebarLineageSection from '../shared/containers/profile/sidebar/Lineage/SidebarLineageSection';
 import { SidebarOwnerSection } from '../shared/containers/profile/sidebar/Ownership/sidebar/SidebarOwnerSection';
 import SidebarQueryOperationsSection from '../shared/containers/profile/sidebar/Query/SidebarQueryOperationsSection';
@@ -162,7 +164,7 @@ export class DatasetEntity implements Entity<Dataset> {
                     },
                 },
                 {
-                    name: 'Documentation',
+                    name: 'Overview',
                     component: DocumentationTab,
                     icon: FileOutlined,
                 },
@@ -197,8 +199,8 @@ export class DatasetEntity implements Entity<Dataset> {
                     component: QueriesTab,
                     icon: ConsoleSqlOutlined,
                     display: {
-                        visible: (_, _1) => true,
-                        enabled: (_, _2) => true,
+                        visible: (_, _1) => false,
+                        enabled: (_, _2) => false,
                     },
                 },
                 {
@@ -280,6 +282,7 @@ export class DatasetEntity implements Entity<Dataset> {
         { component: DataProductSection },
         { component: SidebarTagsSection },
         { component: SidebarGlossaryTermsSection },
+        { component: SidebarAccessRequestSection },
         {
             component: SidebarSiblingsSection,
             display: {

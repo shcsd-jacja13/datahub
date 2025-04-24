@@ -21,6 +21,8 @@ import ViewDefinitionTab from '../shared/tabs/Dataset/View/ViewDefinitionTab';
 import { SidebarViewDefinitionSection } from '../shared/containers/profile/sidebar/Dataset/View/SidebarViewDefinitionSection';
 import { getDataForEntityType } from '../shared/containers/profile/utils';
 import { SidebarDomainSection } from '../shared/containers/profile/sidebar/Domain/SidebarDomainSection';
+import { SidebarAccessRequestSection } from '../shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection';
+// src/app/entity/shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection.tsx
 import { ValidationsTab } from '../shared/tabs/Dataset/Validations/ValidationsTab';
 import { OperationsTab } from './profile/OperationsTab';
 import { EntityMenuItems } from '../shared/EntityDropdown/EntityDropdown';
@@ -131,7 +133,7 @@ export class DatasetEntity implements Entity<Dataset> {
                     },
                 },
                 {
-                    name: 'Documentation',
+                    name: 'Overview',
                     component: DocumentationTab,
                 },
                 {
@@ -154,8 +156,8 @@ export class DatasetEntity implements Entity<Dataset> {
                     name: 'Queries',
                     component: QueriesTab,
                     display: {
-                        visible: (_, _1) => true,
-                        enabled: (_, _2) => true,
+                        visible: (_, _1) => false,
+                        enabled: (_, _2) => false,
                     },
                 },
                 {
@@ -261,6 +263,9 @@ export class DatasetEntity implements Entity<Dataset> {
         },
         {
             component: DataProductSection,
+        },
+        {
+            component: SidebarAccessRequestSection,
         },
         {
             component: SidebarStructuredPropsSection,

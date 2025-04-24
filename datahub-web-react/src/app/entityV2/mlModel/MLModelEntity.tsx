@@ -13,6 +13,8 @@ import { EntityProfile } from '../shared/containers/profile/EntityProfile';
 import { SidebarAboutSection } from '../shared/containers/profile/sidebar/AboutSection/SidebarAboutSection';
 import DataProductSection from '../shared/containers/profile/sidebar/DataProduct/DataProductSection';
 import { SidebarDomainSection } from '../shared/containers/profile/sidebar/Domain/SidebarDomainSection';
+import { SidebarAccessRequestSection } from '/src/app/entity/shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection';
+// src/app/entity/shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection.tsx
 import { SidebarOwnerSection } from '../shared/containers/profile/sidebar/Ownership/sidebar/SidebarOwnerSection';
 import SidebarEntityHeader from '../shared/containers/profile/sidebar/SidebarEntityHeader';
 import { SidebarGlossaryTermsSection } from '../shared/containers/profile/sidebar/SidebarGlossaryTermsSection';
@@ -155,6 +157,9 @@ export class MLModelEntity implements Entity<MlModel> {
         },
         {
             component: SidebarDomainSection,
+        },
+        {
+            component: SidebarAccessRequestSection,
         },
         {
             component: DataProductSection,

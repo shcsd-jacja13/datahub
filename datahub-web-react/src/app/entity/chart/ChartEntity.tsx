@@ -121,24 +121,32 @@ export class ChartEntity implements Entity<Chart> {
                 component: ChartStatsSummarySubHeader,
             }}
             tabs={[
-                {
-                    name: 'Query',
-                    component: ChartQueryTab,
-                    display: {
-                        visible: (_, chart: GetChartQuery) => (chart?.chart?.query?.rawQuery && true) || false,
-                        enabled: (_, chart: GetChartQuery) => (chart?.chart?.query?.rawQuery && true) || false,
-                    },
-                },
-                {
-                    name: 'Documentation',
-                    component: DocumentationTab,
-                },
+//                 {
+//                     name: 'Query',
+//                     component: ChartQueryTab,
+//                     display: {
+//                         visible: (_, chart: GetChartQuery) => (chart?.chart?.query?.rawQuery && true) || false,
+//                         enabled: (_, chart: GetChartQuery) => (chart?.chart?.query?.rawQuery && true) || false,
+//                     },
+//                 },
+//                 {
+//                     name: 'Documentation',
+//                     component: DocumentationTab,
+//                 },
                 {
                     name: 'Fields',
                     component: InputFieldsTab,
                     display: {
                         visible: (_, chart: GetChartQuery) => (chart?.chart?.inputFields?.fields?.length || 0) > 0,
                         enabled: (_, chart: GetChartQuery) => (chart?.chart?.inputFields?.fields?.length || 0) > 0,
+                    },
+                },
+                {
+                    name: 'Query',
+                    component: ChartQueryTab,
+                    display: {
+                        visible: (_, chart: GetChartQuery) => (chart?.chart?.query?.rawQuery && true) || false,
+                        enabled: (_, chart: GetChartQuery) => (chart?.chart?.query?.rawQuery && true) || false,
                     },
                 },
                 {

@@ -16,6 +16,9 @@ import { EntityProfile } from '../shared/containers/profile/EntityProfile';
 import { SidebarAboutSection } from '../shared/containers/profile/sidebar/AboutSection/SidebarAboutSection';
 import DataProductSection from '../shared/containers/profile/sidebar/DataProduct/DataProductSection';
 import { SidebarDomainSection } from '../shared/containers/profile/sidebar/Domain/SidebarDomainSection';
+import { SidebarAccessRequestSection } from '/src/app/entity//shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection';
+// src/app/entity/shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection.tsx
+// SidebarAccessRequestSection.tsx
 import { SidebarOwnerSection } from '../shared/containers/profile/sidebar/Ownership/sidebar/SidebarOwnerSection';
 import StatusSection from '../shared/containers/profile/sidebar/shared/StatusSection';
 import SidebarEntityHeader from '../shared/containers/profile/sidebar/SidebarEntityHeader';
@@ -143,6 +146,9 @@ export class DataFlowEntity implements Entity<DataFlow> {
         },
         {
             component: SidebarDomainSection,
+        },
+        {
+            component: SidebarAccessRequestSection,
         },
         {
             component: DataProductSection,

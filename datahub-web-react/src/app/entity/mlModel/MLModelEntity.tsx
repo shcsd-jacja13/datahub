@@ -13,6 +13,8 @@ import { SidebarTagsSection } from '../shared/containers/profile/sidebar/Sidebar
 import { SidebarAboutSection } from '../shared/containers/profile/sidebar/AboutSection/SidebarAboutSection';
 import { SidebarOwnerSection } from '../shared/containers/profile/sidebar/Ownership/sidebar/SidebarOwnerSection';
 import { SidebarDomainSection } from '../shared/containers/profile/sidebar/Domain/SidebarDomainSection';
+import { SidebarAccessRequestSection } from '../shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection';
+// src/app/entity/shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection.tsx
 import { PropertiesTab } from '../shared/tabs/Properties/PropertiesTab';
 import { DocumentationTab } from '../shared/tabs/Documentation/DocumentationTab';
 import MlModelFeaturesTab from './profile/MlModelFeaturesTab';
@@ -91,6 +93,9 @@ export class MLModelEntity implements Entity<MlModel> {
             component: SidebarDomainSection,
         },
         {
+            component: SidebarAccessRequestSection,
+        },
+        {
             component: DataProductSection,
         },
         {
@@ -112,7 +117,7 @@ export class MLModelEntity implements Entity<MlModel> {
                     component: MLModelSummary,
                 },
                 {
-                    name: 'Documentation',
+                    name: 'Overview',
                     component: DocumentationTab,
                 },
                 {

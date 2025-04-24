@@ -11,6 +11,11 @@ import { SidebarAboutSection } from '../shared/containers/profile/sidebar/AboutS
 import SidebarContentsSection from '../shared/containers/profile/sidebar/Container/SidebarContentsSection';
 import DataProductSection from '../shared/containers/profile/sidebar/DataProduct/DataProductSection';
 import { SidebarDomainSection } from '../shared/containers/profile/sidebar/Domain/SidebarDomainSection';
+// import { SidebarAccessRequestSection } from '../shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection';
+// import { SidebarAccessRequestSection } from '../entity/shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection.tsx';
+import { SidebarAccessRequestSection } from '/src/app/entity/shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection';
+// src/app/entityV2/container/ContainerEntity.tsx
+// '/src/app/entity/shared/containers/profile/sidebar/AccessRequest/SidebarAccessRequestSection.tsx';
 import { SidebarOwnerSection } from '../shared/containers/profile/sidebar/Ownership/sidebar/SidebarOwnerSection';
 import SidebarEntityHeader from '../shared/containers/profile/sidebar/SidebarEntityHeader';
 import { SidebarGlossaryTermsSection } from '../shared/containers/profile/sidebar/SidebarGlossaryTermsSection';
@@ -141,6 +146,9 @@ export class ContainerEntity implements Entity<Container> {
         },
         {
             component: DataProductSection,
+        },
+        {
+            component: SidebarAccessRequestSection,
         },
         {
             component: SidebarTagsSection,

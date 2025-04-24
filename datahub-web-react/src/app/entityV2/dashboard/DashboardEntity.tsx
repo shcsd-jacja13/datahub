@@ -158,7 +158,7 @@ export class DashboardEntity implements Entity<Dashboard> {
                     },
                 },
                 {
-                    name: 'Documentation',
+                    name: 'Overview',
                     component: DocumentationTab,
                     icon: FileOutlined,
                 },
@@ -226,9 +226,6 @@ export class DashboardEntity implements Entity<Dashboard> {
             component: SidebarDomainSection,
         },
         {
-            component: SidebarAccessRequestSection,
-        },
-        {
             component: DataProductSection,
         },
         {
@@ -242,6 +239,9 @@ export class DashboardEntity implements Entity<Dashboard> {
         },
         {
             component: StatusSection,
+        },
+        {
+            component: SidebarAccessRequestSection,
         },
     ];
 

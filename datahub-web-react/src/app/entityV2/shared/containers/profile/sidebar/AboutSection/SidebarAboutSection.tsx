@@ -51,7 +51,7 @@ export const SidebarAboutSection = ({ properties, readOnly }: Props) => {
     return (
         <>
             <SidebarSection
-                title="Documentation"
+                title="Overview"
                 content={
                     <>
                         {displayedDescription && [

@@ -66,7 +66,7 @@ export default function SummaryAboutSection() {
 
     return (
         <SectionContainer>
-            <SummaryTabHeaderTitle title="Documentation" icon={<FileOutlined />} />
+            <SummaryTabHeaderTitle title="Overview" icon={<FileOutlined />} />
             <DocumentationWrapper canExpand={canExpand ? true : undefined}>
                 {!!description && (
                     <>
